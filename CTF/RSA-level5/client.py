@@ -4,7 +4,7 @@ os.environ['PWNLIB_SILENT']='True'
 import pwn
 from Crypto.Util.number import long_to_bytes
 
-server = pwn.remote("130.192.5.212", 6645)
+server = pwn.remote("smallrsa.challs.m0lecon.it", 3333)
 n=int(server.recvline().decode())
 ct=int(server.recvline().decode())
 e= 65537

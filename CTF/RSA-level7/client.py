@@ -4,11 +4,6 @@ os.environ['PWNLIB_SILENT'] = 'True'
 from pwnlib.tubes.remote import remote
 from Crypto.Util.number import long_to_bytes
 
-
-
-
-
-
 #test the connection with the server
 server = remote('130.192.5.212', 6647)
 
